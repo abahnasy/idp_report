@@ -1,0 +1,256 @@
+\begin{thebibliography}{10}\itemsep=-1pt
+
+\bibitem{baser2019fantrack}
+Erkan Baser, Venkateshwaran Balasubramanian, Prarthana Bhattacharyya, and
+  Krzysztof Czarnecki.
+\newblock Fantrack: 3d multi-object tracking with feature association network.
+\newblock In {\em 2019 IEEE Intelligent Vehicles Symposium (IV)}, pages
+  1426--1433. IEEE, 2019.
+
+\bibitem{berg2017graph}
+Rianne van~den Berg, Thomas~N Kipf, and Max Welling.
+\newblock Graph convolutional matrix completion.
+\newblock {\em arXiv preprint arXiv:1706.02263}, 2017.
+
+\bibitem{bewley2016simple}
+Alex Bewley, Zongyuan Ge, Lionel Ott, Fabio Ramos, and Ben Upcroft.
+\newblock Simple online and realtime tracking.
+\newblock In {\em 2016 IEEE international conference on image processing
+  (ICIP)}, pages 3464--3468. IEEE, 2016.
+
+\bibitem{bochinski2017high}
+Erik Bochinski, Volker Eiselein, and Thomas Sikora.
+\newblock High-speed tracking-by-detection without using image information.
+\newblock In {\em 2017 14th IEEE International Conference on Advanced Video and
+  Signal Based Surveillance (AVSS)}, pages 1--6. IEEE, 2017.
+
+\bibitem{chen2019graph}
+Yunpeng Chen, Marcus Rohrbach, Zhicheng Yan, Yan Shuicheng, Jiashi Feng, and
+  Yannis Kalantidis.
+\newblock Graph-based global reasoning networks.
+\newblock In {\em Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition}, pages 433--442, 2019.
+
+\bibitem{engelcke2017vote3deep}
+Martin Engelcke, Dushyant Rao, Dominic~Zeng Wang, Chi~Hay Tong, and Ingmar
+  Posner.
+\newblock Vote3deep: Fast object detection in 3d point clouds using efficient
+  convolutional neural networks.
+\newblock In {\em 2017 IEEE International Conference on Robotics and Automation
+  (ICRA)}, pages 1355--1361. IEEE, 2017.
+
+\bibitem{frossard2018end}
+Davi Frossard and Raquel Urtasun.
+\newblock End-to-end learning of multi-sensor 3d tracking by detection.
+\newblock In {\em 2018 IEEE international conference on robotics and automation
+  (ICRA)}, pages 635--642. IEEE, 2018.
+
+\bibitem{gao2019graph}
+Junyu Gao, Tianzhu Zhang, and Changsheng Xu.
+\newblock Graph convolutional tracking.
+\newblock In {\em Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition}, pages 4649--4659, 2019.
+
+\bibitem{ge2020afdet}
+Runzhou Ge, Zhuangzhuang Ding, Yihan Hu, Yu Wang, Sijia Chen, Li Huang, and
+  Yuan Li.
+\newblock Afdet: Anchor free one stage 3d object detection.
+\newblock {\em arXiv preprint arXiv:2006.12671}, 2020.
+
+\bibitem{geiger2012we}
+Andreas Geiger, Philip Lenz, and Raquel Urtasun.
+\newblock Are we ready for autonomous driving? the kitti vision benchmark
+  suite.
+\newblock In {\em 2012 IEEE Conference on Computer Vision and Pattern
+  Recognition}, pages 3354--3361. IEEE, 2012.
+
+\bibitem{gori2005new}
+Marco Gori, Gabriele Monfardini, and Franco Scarselli.
+\newblock A new model for learning in graph domains.
+\newblock In {\em Proceedings. 2005 IEEE International Joint Conference on
+  Neural Networks, 2005.}, volume~2, pages 729--734. IEEE, 2005.
+
+\bibitem{graham20183d}
+Benjamin Graham, Martin Engelcke, and Laurens Van Der~Maaten.
+\newblock 3d semantic segmentation with submanifold sparse convolutional
+  networks.
+\newblock In {\em Proceedings of the IEEE conference on computer vision and
+  pattern recognition}, pages 9224--9232, 2018.
+
+\bibitem{hamilton2017inductive}
+William~L Hamilton, Rex Ying, and Jure Leskovec.
+\newblock Inductive representation learning on large graphs.
+\newblock {\em arXiv preprint arXiv:1706.02216}, 2017.
+
+\bibitem{hu2018relation}
+Han Hu, Jiayuan Gu, Zheng Zhang, Jifeng Dai, and Yichen Wei.
+\newblock Relation networks for object detection.
+\newblock In {\em Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition}, pages 3588--3597, 2018.
+
+\bibitem{kipf2016semi}
+Thomas~N Kipf and Max Welling.
+\newblock Semi-supervised classification with graph convolutional networks.
+\newblock {\em arXiv preprint arXiv:1609.02907}, 2016.
+
+\bibitem{kuhn1955hungarian}
+Harold~W Kuhn.
+\newblock The hungarian method for the assignment problem.
+\newblock {\em Naval research logistics quarterly}, 2(1-2):83--97, 1955.
+
+\bibitem{lang2019pointpillars}
+Alex~H Lang, Sourabh Vora, Holger Caesar, Lubing Zhou, Jiong Yang, and Oscar
+  Beijbom.
+\newblock Pointpillars: Fast encoders for object detection from point clouds.
+\newblock In {\em Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition}, pages 12697--12705, 2019.
+
+\bibitem{luo2018fast}
+Wenjie Luo, Bin Yang, and Raquel Urtasun.
+\newblock Fast and furious: Real time end-to-end 3d detection, tracking and
+  motion forecasting with a single convolutional net.
+\newblock In {\em Proceedings of the IEEE conference on Computer Vision and
+  Pattern Recognition}, pages 3569--3577, 2018.
+
+\bibitem{monti2017geometric}
+Federico Monti, Michael~M Bronstein, and Xavier Bresson.
+\newblock Geometric matrix completion with recurrent multi-graph neural
+  networks.
+\newblock {\em arXiv preprint arXiv:1704.06803}, 2017.
+
+\bibitem{pirsiavash2011globally}
+Hamed Pirsiavash, Deva Ramanan, and Charless~C Fowlkes.
+\newblock Globally-optimal greedy algorithms for tracking a variable number of
+  objects.
+\newblock In {\em CVPR 2011}, pages 1201--1208. IEEE, 2011.
+
+\bibitem{qi2018frustum}
+Charles~R Qi, Wei Liu, Chenxia Wu, Hao Su, and Leonidas~J Guibas.
+\newblock Frustum pointnets for 3d object detection from rgb-d data.
+\newblock In {\em Proceedings of the IEEE conference on computer vision and
+  pattern recognition}, pages 918--927, 2018.
+
+\bibitem{qi2017pointnet}
+Charles~R Qi, Hao Su, Kaichun Mo, and Leonidas~J Guibas.
+\newblock Pointnet: Deep learning on point sets for 3d classification and
+  segmentation.
+\newblock In {\em Proceedings of the IEEE conference on computer vision and
+  pattern recognition}, pages 652--660, 2017.
+
+\bibitem{shi2019skeleton}
+Lei Shi, Yifan Zhang, Jian Cheng, and Hanqing Lu.
+\newblock Skeleton-based action recognition with directed graph neural
+  networks.
+\newblock In {\em Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition}, pages 7912--7921, 2019.
+
+\bibitem{velivckovic2017graph}
+Petar Veli{\v{c}}kovi{\'c}, Guillem Cucurull, Arantxa Casanova, Adriana Romero,
+  Pietro Lio, and Yoshua Bengio.
+\newblock Graph attention networks.
+\newblock {\em arXiv preprint arXiv:1710.10903}, 2017.
+
+\bibitem{wang2015voting}
+Dominic~Zeng Wang and Ingmar Posner.
+\newblock Voting for voting in online point cloud object detection.
+\newblock In {\em Robotics: Science and Systems}, volume~1, pages 10--15607.
+  Rome, Italy, 2015.
+
+\bibitem{wang2020pillar}
+Yue Wang, Alireza Fathi, Abhijit Kundu, David Ross, Caroline Pantofaru, Tom
+  Funkhouser, and Justin Solomon.
+\newblock Pillar-based object detection for autonomous driving.
+\newblock {\em arXiv preprint arXiv:2007.10323}, 2020.
+
+\bibitem{wang2019dynamic}
+Yue Wang, Yongbin Sun, Ziwei Liu, Sanjay~E Sarma, Michael~M Bronstein, and
+  Justin~M Solomon.
+\newblock Dynamic graph cnn for learning on point clouds.
+\newblock {\em Acm Transactions On Graphics (tog)}, 38(5):1--12, 2019.
+
+\bibitem{weng2019baseline}
+Xinshuo Weng and Kris Kitani.
+\newblock A baseline for 3d multi-object tracking.
+\newblock {\em arXiv preprint arXiv:1907.03961}, 2019.
+
+\bibitem{weng2020gnn3dmot}
+Xinshuo Weng, Yongxin Wang, Yunze Man, and Kris~M Kitani.
+\newblock Gnn3dmot: Graph neural network for 3d multi-object tracking with
+  2d-3d multi-feature learning.
+\newblock In {\em Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition}, pages 6499--6508, 2020.
+
+\bibitem{wojke2017simple}
+Nicolai Wojke, Alex Bewley, and Dietrich Paulus.
+\newblock Simple online and realtime tracking with a deep association metric.
+\newblock In {\em 2017 IEEE international conference on image processing
+  (ICIP)}, pages 3645--3649. IEEE, 2017.
+
+\bibitem{wu2019unsupervised}
+Jinlin Wu, Yang Yang, Hao Liu, Shengcai Liao, Zhen Lei, and Stan~Z Li.
+\newblock Unsupervised graph association for person re-identification.
+\newblock In {\em Proceedings of the IEEE/CVF International Conference on
+  Computer Vision}, pages 8321--8330, 2019.
+
+\bibitem{xu2019spatial}
+Jiarui Xu, Yue Cao, Zheng Zhang, and Han Hu.
+\newblock Spatial-temporal relation networks for multi-object tracking.
+\newblock In {\em Proceedings of the IEEE/CVF International Conference on
+  Computer Vision}, pages 3988--3998, 2019.
+
+\bibitem{yan2018second}
+Yan Yan, Yuxing Mao, and Bo Li.
+\newblock Second: Sparsely embedded convolutional detection.
+\newblock {\em Sensors}, 18(10):3337, 2018.
+
+\bibitem{yang2018pixor}
+Bin Yang, Wenjie Luo, and Raquel Urtasun.
+\newblock Pixor: Real-time 3d object detection from point clouds.
+\newblock In {\em Proceedings of the IEEE conference on Computer Vision and
+  Pattern Recognition}, pages 7652--7660, 2018.
+
+\bibitem{yang20203dssd}
+Zetong Yang, Yanan Sun, Shu Liu, and Jiaya Jia.
+\newblock 3dssd: Point-based 3d single stage object detector.
+\newblock In {\em Proceedings of the IEEE/CVF conference on computer vision and
+  pattern recognition}, pages 11040--11048, 2020.
+
+\bibitem{yang2019std}
+Zetong Yang, Yanan Sun, Shu Liu, Xiaoyong Shen, and Jiaya Jia.
+\newblock Std: Sparse-to-dense 3d object detector for point cloud.
+\newblock In {\em Proceedings of the IEEE/CVF International Conference on
+  Computer Vision}, pages 1951--1960, 2019.
+
+\bibitem{yin2020center}
+Tianwei Yin, Xingyi Zhou, and Philipp Kr{\"a}henb{\"u}hl.
+\newblock Center-based 3d object detection and tracking.
+\newblock {\em arXiv preprint arXiv:2006.11275}, 2020.
+
+\bibitem{ying2018graph}
+Rex Ying, Ruining He, Kaifeng Chen, Pong Eksombatchai, William~L Hamilton, and
+  Jure Leskovec.
+\newblock Graph convolutional neural networks for web-scale recommender
+  systems.
+\newblock In {\em Proceedings of the 24th ACM SIGKDD International Conference
+  on Knowledge Discovery \& Data Mining}, pages 974--983, 2018.
+
+\bibitem{zhou2019objects}
+Xingyi Zhou, Dequan Wang, and Philipp Kr{\"a}henb{\"u}hl.
+\newblock Objects as points.
+\newblock {\em arXiv preprint arXiv:1904.07850}, 2019.
+
+\bibitem{zhou2020end}
+Yin Zhou, Pei Sun, Yu Zhang, Dragomir Anguelov, Jiyang Gao, Tom Ouyang, James
+  Guo, Jiquan Ngiam, and Vijay Vasudevan.
+\newblock End-to-end multi-view fusion for 3d object detection in lidar point
+  clouds.
+\newblock In {\em Conference on Robot Learning}, pages 923--932. PMLR, 2020.
+
+\bibitem{zhou2018voxelnet}
+Yin Zhou and Oncel Tuzel.
+\newblock Voxelnet: End-to-end learning for point cloud based 3d object
+  detection.
+\newblock In {\em Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition}, pages 4490--4499, 2018.
+
+\end{thebibliography}

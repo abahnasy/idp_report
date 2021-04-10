@@ -7,6 +7,8 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 
+
+
 % Include other packages here, before hyperref.
 
 % If you comment hyperref and then uncomment it, you should delete
@@ -21,26 +23,21 @@
 
 % Pages are numbered in submission mode, and unnumbered in camera-ready
 %\ifcvprfinal\pagestyle{empty}\fi
-\setcounter{page}{4321}
+\setcounter{page}{1}
 \begin{document}
 
 %%%%%%%%% TITLE
-\title{\LaTeX\ Author Guidelines for CVPR Proceedings}
+\title{3D Object Detection and Tracking using Graph Neural Networks on Waymo Dataset}
 
-\author{First Author\\
-Institution1\\
-Institution1 address\\
-{\tt\small firstauthor@i1.org}
+\author{Ahmed Bahnasy\\
+Technical University in Munich\\
+
+{\tt\small ahmed.bahnasy@tum.de}
 % For a paper whose authors are all at the same institution,
 % omit the following lines up until the closing ``}''.
 % Additional authors and addresses can be added with ``\and'',
 % just like the second author.
 % To save space, use either the email address or home page, not both
-\and
-Second Author\\
-Institution2\\
-First line of institution2 address\\
-{\tt\small secondauthor@i2.org}
 }
 
 \maketitle
@@ -48,27 +45,49 @@ First line of institution2 address\\
 
 %%%%%%%%% ABSTRACT
 \begin{abstract}
-   The ABSTRACT is to be in fully-justified italicized text, at the top
-   of the left-hand column, below the author and affiliation
-   information. Use the word ``Abstract'' as the title, in 12-point
-   Times, boldface type, centered relative to the column, initially
-   capitalized. The abstract is to be in 10-point, single-spaced type.
-   Leave two blank lines after the Abstract, then begin the main text.
-   Look at previous CVPR abstracts to get a feel for style and length.
+Recent approaches for 3D object detection have made a tremendous progress due to the development of deep learning. this also highly influences the  progress in other tasks like 3D Multi-object tracking (MOT) which is an indispensable component to any autonomous system. Recent work uses a standard tracking- by-detection pipeline, where feature extraction is first per- formed independently for each object in order to compute an affinity matrix. Then the affinity matrix is passed to the Hungarian algorithm for data association. This matching can be seen as discrete optimisation process and there is no learning it. A key factor of this standard pipeline is to learn discriminative features for different objects, by relying on a robust detector in order to reduce confusion during data association. In this task, we experiment with improving the discriminative feature learning for MOT: by first build a robust object detector and second instead of obtaining features for each object independently, we try applying learning module for tracking by introducing the Graph Neural Network which enables feature interaction mechanism. As a result, the feature of one object is informed of the features of other objects so that the object feature can lean towards the object with similar feature (i.e., object probably with a same ID) and deviate from objects with dissimilar features (i.e., object prob- ably with different IDs), leading to a more discriminative feature for each object
 \end{abstract}
 
 %%%%%%%%% BODY TEXT
 \section{Introduction}
 
-Please follow the steps outlined below when submitting your manuscript to
-the IEEE Computer Society Press.  This style guide now has several
-important modifications (for example, you are no longer warned against the
-use of sticky tape to attach your artwork to the paper), so all authors
-should read this new version.
+\paragraph{}
+Robust 3D perception becomes an essential component in any state-of-the-art autonomous system. 3D detection has a series of challenges: First, point-clouds are sparse, the points are unevenly distributed across the 3D space, and most of the 3D space are without measurements. Second, 3D objects have a wide range of sizes, shapes and aspect ratios, for example, in autonomous driving domain, buses, trucks and cars are elongated, pedestrians are tall and cyclists are nearly planer. These challenges makes applying ideas from 2D domain to 3D domain not straight forward. trying to use the anchor based approach followed in 2D domain by assigning a different anchor for each object orientation increases the computational cost and may introduce a large number of of potential false-positive detections. the main challenge for linking up 2D and 3D domains lies in the way the objects are represented \cite{yang20203dssd}. representing objects as points greatly simplifies 3D recognition \cite{yin2020center}. In this task, we tried to build a 3D that detects centers of the objects and their properties using a key-point detector \cite{zhou2019objects}. In specific we followed the same approach in \cite{yin2020center, ge2020afdet} by using any standard Lidar-based backbone network, for example, PointPillars or VoxelNet, to build an intermediate representation for the input point cloud. this representation is then flattened into Birds-Eye-View map using a standard image-based key-point detector to find object centers \cite{zhou2019objects}. the rest of the 3D bounding box parameters, i.e., 3D Size, orientation, and velocity, are then regressed from the center location vector. according to \cite{yin2020center}, center-based representation has several advantages: First, it reduces the detector search space since points has no orientation, unlike bounding boxes. Second, center-based representation simplifies the tracking downstream tasks. 
+
+\paragraph{}
+Much like 3D perception, Multi-object tracking (MOT) is a crucial component for autonomous driving \cite{luo2018fast}. Tracking-by-detection paradigm is the dominant approach when it comes to online MOT problems \cite{bewley2016simple, weng2019baseline}. The main idea is to apply object detector to all frames and extract features independently from each detected object. Then pairwise similarity is computed between objects and a Hungarian algorithm \cite{kuhn1955hungarian} is used to solve the problem. The key idea in this approach is to learn discriminative features for the objects with different identities to reduce the confusion in the matching. One key observation is that feature extraction is done independently and there is no interaction between features during feature extraction. according to \cite{weng2020gnn3dmot}, independent feature extraction is sub-optimal for discriminative feature learning. this idea is very important for MOT, given the fact that an object in current frame can be matched to at most one object in the previous frame. so if the similarity between two features increased, then the pairwise similarity between the rest of the objects and any of these two objects should be decreased to avoid confusion for matching. based on that observation, we followed \cite{weng2020gnn3dmot} by implementing a Graph Neural Network to do the feature interaction. The idea is to construct a graph with each node being the object feature. Then, each node can update its feature by aggregating features from other nodes during layer propagation step. the object feature is now not isolated and can be adapted with respect to other features.
+%-------------------------------------------------------------------------
+
+\section{Related Work}
+
+\paragraph{3D Object Detection} is all about predicting the three dimensional rotated bounding boxes \cite{geiger2012we, lang2019pointpillars, qi2018frustum, yan2018second, yang20203dssd, yang2019std}. Most 3D-based methods either use point cloud data directly or require converting these data into 3D grids or voxels instead of generating BEV representations. In \cite{wang2015voting}, point cloud data are converted into voxels containing feature vectors, and then a novel convolution-like voting-based algorithm is used for detection. Vote3Deep \cite{engelcke2017vote3deep} leverages feature voting in \cite{wang2015voting} to efficiently process the sparse 3D point-cloud in equally spaced 3D voxels. VoxelNet \cite{zhou2018voxelnet} uses a PointNet \cite{qi2017pointnet} inside each voxel to generate a unified feature representation from which a head with 3D sparse convolutions \cite{graham20183d} and 2D convolutions produces detections. SECOND \cite{yan2018second} simplifies the VoxelNet and speeds up sparse 3D convolutions. PIXOR \cite{yang2018pixor} project all points onto a 2D feature map with 3D occupancy and point intensity information to remove the expensive 3D convolutions. PointPillars\cite{lang2019pointpillars} replaces all voxel computation with a pillar representation, a single tall elongated voxel per map location, improving backbone efficiency. MVF \cite{zhou2020end} and Pillar-od \cite{wang2020pillar} combine multiple view features to learn a more effective pillar representation. In this task we followed \cite{yin2020center, ge2020afdet} by focusing on the output representation and employ any 3D encoder to get the representation.
+
+\paragraph{Online Multi-Object Tracking} is mostly addressed using Tracking by Detection paradigm. the performance is highly impacted by two factors: object detection quality and discriminative feature learning. After the affinity matrix is computed based on the pairwise similarity of learned discriminative feature, the problem of online MOT could be addressed as as a discrete optimization problem and could be solved using as  bipartite matching problem using the Hungarian algorithm \cite{kuhn1955hungarian}. To obtain discriminative feature, prior work mostly focuses on the feature selection. Among different features, it turns out that motion and appearance are the most dis- criminative features. Early work employs hand-crafted features such as spatial distance \cite{pirsiavash2011globally} and Intersection of Union (IoU) \cite{bochinski2017high} as the motion feature, and use color histograms as the appearance feature. Recently, Convolutional Neural Networks have been used to extract appearance feature \cite{baser2019fantrack, frossard2018end}. Regarding the motion feature, many filter based approaches has been used \cite{bewley2016simple, weng2019baseline}. Deep learning approaches has been introduced for motion feature in \cite{baser2019fantrack}. we followed the same idea in \cite{wojke2017simple, weng2020gnn3dmot} by exploring both the appearance and motion feature with focus on the 3D space.
+
+\paragraph{Graph Neural Networks} is used as way to improve discriminative feature learning for MOT after showing promising performance in many fields\cite{hamilton2017inductive,velivckovic2017graph,kipf2016semi, berg2017graph, monti2017geometric, ying2018graph}. GNNs was first proposed by \cite{gori2005new} to directly process graph-structured data using neural networks. The major component of the GNNs is the node feature aggregation technique, with which node can update its feature by interacting with other nodes. With this technique, significant success has been achieved in many fields using GNNs such as semantic segmentation\cite{chen2019graph}, action recognition \cite{shi2019skeleton}, single object tracking \cite{gao2019graph}, person re-identification \cite{wu2019unsupervised}, point cloud classification and segmentation \cite{wang2019dynamic}. The majority of the work deals with object features as independent and isolated from other features. by leveraging node aggregation technique of the GNNs, object features could be iteratively evolved so that the feature of different objects can be more discriminative. the idea of feature interaction was first introduced in \cite{hu2018relation} to encode context information for object detection in the spatial domain, Although a temporal relation network is proposed in the follow-up work \cite{xu2019spatial}, the feature of a tracked object is only aggregating from its past trajectory and no interaction with other object features exist. in This task we followed \cite{yin2020center} by implementing a generic feature interaction framework that can model any kind of interaction in both spatial and temporal domains
+
 
 %-------------------------------------------------------------------------
-\subsection{Language}
 
+\section{Dataset}
+
+%-------------------------------------------------------------------------
+
+\section{Network Architecture}
+
+During the early stages of this task, we tried to use Votenet \cite{qi2019deep} as 3D object detector. Despite the promising results of this architecture on Indoor dataset, it performs very poorly on outdoor datasets like KITTI and Waymo. More information about these experiments are stated Appendix \ref{appendix:votenet}
+
+\subsection{Detection}
+
+\subsection{Tracking}
+
+%-------------------------------------------------------------------------
+
+\section{Experiments}
+\subsection{Main Results}
+\subsection{Ablation Studies}
+
+\if false
 All manuscripts must be in English.
 
 \subsection{Dual submission}
@@ -444,11 +463,99 @@ published in the proceedings.
 Please direct any questions to the production editor in charge of these 
 proceedings at the IEEE Computer Society Press: 
 \url{https://www.computer.org/about/contact}. 
-
+\fi
 
 {\small
 \bibliographystyle{ieee_fullname}
 \bibliography{egbib}
 }
+
+
+\appendix
+\section*{Appendices}
+\addcontentsline{toc}{section}{Appendices}
+\renewcommand{\thesubsection}{\Alph{subsection}}
+
+\subsection{Votenet for Lidar Outdoor Scenes}\label{apendix:votenet}
+
+\subsubsection {Data preparation and Training}
+VoteNet consists of two modules: the proposal module which consumes the raw point cloud and produces the virtual voting points; and the object proposal and classification module that operates on the voting points to propose and classify objects. Up to now, VoteNet has only been tuned and tested on RGB-D data (ScanNet and SUN RGB-D). in order to adapt the model for Waymo, we implemented a custom input pipeline to optimally preprocess and feed the Waymo point cloud data into the VoteNet network.
+Following the same train/validation/test split from Waymo paper \cite{cite waymo}, and following the same training procedure mentioned in \cite{votenet}, For each scene we randomly subsample 20k points. The scenes are furthermore augmented on-the-fly with random flips in horizontal plane, random uniform rotations along up-axis in  $\pm$30$^{\circ}$ range, and random uniform scaling of $\pm$10\%. In addition to three Euclidean coordinates for each point, we also include up to two additional features: the provided laser reflection intensities, and a height estimate for each point. The latter is estimated as a 1\% percentile of all point positions along the up-axis.
+We perform training on the dynamic classes of the Waymo dataset: car, pedestrian, and cyclist. We choose one size template per class, and 12 bins for the heading angle. We train with a batch size of 16 and incorporate a scheduled learning policy with a starting LR of 0.001 and LR-decays by 0.1 at 60, 90, and 120 epochs, as well as an exponential BN momentum decay. We use same loss function as in SUN RGB-D case.
+\paragraph{}
+Points clouds from outdoor LiDAR scans are quite different from point clouds from RGB-D indoor scans. For example, the typical scales of the Waymo scenes are significantly larger than those of indoor scans, with depth fields reaching beyond 70 meters along forward-axis. the LiDAR point cloud has strongly varying density and is generally more sparse than the point clouds produced from the RGB-D imagery. Point features extracted from sparse regions may generalize poorly to dense regions, and vice versa
+
+to further adapt VoteNet to the distinct characteristics of the outdoor LiDAR scenes. we adapt the receptive field radii and increase the number of clusters for feature aggregation. to capture fine details of point cloud and, at the same time, mitigate  the corruption of local patterns due to sampling deficiency in sparse cloud regions, we enhance the set-abstraction modules of the backbone network with multi-scale grouping (MSG) layers \cite{pointnet++}, which concatenate features at different scales before feeding them into the feature aggregation layer.
+
+Among all the experiments to find the best backbone network parameters, we ended up following the configuration in \cite{RCNN paper} by configuring four MSG-based SA layers used to subsample the inputs to 4096, 1024, 256 and 64 points, and two FP layers to upsample the points back to 1024 points, each with additional 512 deep features. Tables \ref{tab:votenet_oringinal} and \ref{tab:votenet_msg} illustrates the difference between the two backbones.
+
+
+\begin{table*}
+\label{tab:votenet_oringinal}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+Module (Input) & Output dimensions & clusters K & Receptive field radius & MLP layer dimensions \\
+\hline\hline
+SA1 (PC) & (4096, 3 + 96) & 2048 & 0.2 & 64/64/128 \\
+SA2 (SA1) & (1024, 3 + 256) & 1024 & 0.4 & 128/128/256 \\
+SA3 (SA2) & (512, 3 + 512) & 512 & 0.8 & 128/128/256 \\
+SA4 (SA3) & (64, 3 + 512) & 256 & 1.2 & 128/128/256 \\
+FC1 (SA3, SA4) & (512, 3 + 512) & - & - & 512/512 \\
+FC2 (SA2, SA3) & (1024, 3 + 512) & - & - & 512/512 \\
+\hline
+\end{tabular}
+\end{center}
+\caption{Original Architecture of VPN in \cite{votenet paper}}
+\end{table*}
+
+
+
+\begin{table*}
+\label{tab:votenet_msg}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+Module (Input) & Output dimensions & clusters K & MSG Radii & MLP layers \\
+\hline\hline
+SA1 (PC) & (4096, 3 + 96) & 2048 & 0.1,  0.5 & 16/16/32, 32/32/64 \\
+SA2 (SA1) & (1024, 3 + 256) & 1024 & 0.1,  0.5 & 64/64/128,  64/96/128 \\
+SA3 (SA2) & (512, 3 + 512) & 512 & 0.1,  0.5 & 128/196/256,  128/196/256 \\
+SA4 (SA3) & (64, 3 + 512) & 256 & 0.1,  0.5 & 256/256/512,  256/256/512 \\
+FC1 (SA3, SA4) & (512, 3 + 512) & - & - & 512/512 \\
+FC2 (SA2, SA3) & (1024, 3 + 512) & - & - & 512/512 \\
+\hline
+\end{tabular}
+\end{center}
+\caption{Enhanced architecture of VPN with two MSG radii of receptive fields $r_{1,2}$ (meters), and MLP parameters for each MSG group implemented \cite{RCNN paper}}
+\end{table*}
+
+\subsubsection{Results on 360$^{\circ}$ Point cloud}
+When working the 360 point cloud, the Average Precision results from different VoteNet architectures were very poor. after training for nearly 120 epochs, mAP over the test set was nearly 0.15 only. the problem lies in the different points densities between outdoor LiDAR point clouds and  indoor RGB-D point cloud. there are a lot of objects which have only 2 ~ 10 points per bounding box. after the initial downsampling from 120k to 20k points for processing the further downsampling done by Set abstraction modules, the final proposal points are actually lie outside most of the ground truth bounding boxes as shown in Figure \ref{fig:proposal_points}. Thus, the network was not able to learn the correct voting. nearly all of the detected objects in this experiment were objects near to the sensor with >= 1000 points, all objects with fewer points were missed.
+
+\begin{figure}
+	\includegraphics[width=\linewidth]{media/votenet_proposal_points.png}
+   \caption{Top view of final 3D space. Blue Points are the final proposal points from VoteNet. Green and Magenta boxes are Ground truth bounding boxes. During training, the final proposal are all lie outside the ground truth bounding boxes. Hence, the voting module cannot learn the correct modules.}
+\label{fig:proposal_points}
+\end{figure}
+
+\subsubsection{Results on Front Camera Frustum Point Cloud}
+To verify the results of the previous section, we did an extensive exploration in the literature about the experiments involves raw point processing approaches \cite{pointnet, point++, votennet, votenet frustutm, point rcnn} for outdoor datasets \cite{KITTI,  nuscenes, Waymo, a2d2}. interesting work in \cite{point rcnn} in forground background segmentation caught our attention. as a first step, we reproduced the work in \cite{point RCNN} on KITTI dataset \cite{KITTI}. Then, Before reproducing the same experiment on Waymo \ cite{}, we implemented a specific data processing pipeline to make Waymo point cloud identical to KITTI. As KITTI includes annotations only for the objects in teh front camera frustum. we first project the 360-degree LiDAR data onto the image plane and extract the point cloud that lie inside the result- ing frustum. This step reduces the average number on points per scene from $\sim$170k to 16,384. For each scene we randomly subsample 16,384 points, and for scenes with fewer points, we randomly copy the points up to a total of 16,384.
+
+reducing the size of the point cloud make a tremendous boost in the (AP) results of VoteNet when we re-executed the experimetents mentioned in \ref{} on this data setup. due to the small initial input size, the ratio between points inside bounding boxes to the points outside bounding boxes are very large when compared in case of using the 360 point cloud. many of the final proposal points are found inside the ground truth bounding boxes. Thus the voting module was able to learn the correct voting. Figure \ref{fig:votnet_front_camera_results} shows the final results of running two VoteNet architectures on the reduced Waymo point clouds.
+
+\begin{figure}
+	\includegraphics[width=\linewidth]{media/votenet_mAP.png}
+   \caption{Example of caption.  It is set in Roman so that mathematics
+   (always set in Roman: $B \sin A = A \sin B$) may be included without an
+   ugly clash.}
+\label{fig:votnet_front_camera_results}
+\end{figure}
+
+
+\subsection{Appendix Two Test}
+
+Minkowski Vs Spconv vs Sparse Tensor library
+
 
 \end{document}
