@@ -77,21 +77,86 @@
 \citation{xu2019spatial}
 \citation{yin2020center}
 \citation{qi2019deep}
-\bibstyle{ieee_fullname}
-\bibdata{egbib}
-\bibcite{baser2019fantrack}{1}
+\citation{sota on waymo}
+\citation{dataset}
+\citation{second}
+\citation{pixor}
+\citation{PointPillars}
 \@writefile{toc}{\contentsline {section}{\numberline {2}\hskip -1em.\nobreakspace  {}Related Work}{2}{section.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{3D Object Detection}{2}{section*.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{Online Multi-Object Tracking}{2}{section*.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{Graph Neural Networks}{2}{section*.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3}\hskip -1em.\nobreakspace  {}Dataset}{2}{section.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4}\hskip -1em.\nobreakspace  {}Network Architecture}{2}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}\hskip -1em.\nobreakspace  {}Network Architecture}{2}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}\hskip -1em.\nobreakspace  {}Detection}{2}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Point Cloud Encoder.}{2}{section*.6}\protected@file@percent }
+\citation{ge2020afdet}
+\citation{zhou2019objects}
+\citation{weng2020gnn3dmot}
+\citation{shi2019pointrcnn}
+\citation{weng2020gnn3dmot}
+\citation{pointnet}
+\citation{weng2020gnn3dmot}
+\@writefile{toc}{\contentsline {paragraph}{Center heatmap head.}{3}{section*.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Regression heads.}{3}{section*.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}\hskip -1em.\nobreakspace  {}Tracking}{3}{subsection.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.1}Feature Extractor}{3}{subsubsection.3.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.2}Graph Neural Network for Data Association}{3}{subsubsection.3.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Graph Construction.}{3}{section*.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Affinity Matrix using Edge Regression.}{3}{section*.10}\protected@file@percent }
+\citation{weng2020gnn3dmot}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Overall Architecture of the Detection Network. source \cite  {ge2020afdet}}}{4}{figure.1}\protected@file@percent }
+\newlabel{fig:detection_network}{{1}{4}{Overall Architecture of the Detection Network. source \cite {ge2020afdet}}{figure.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces source \cite  {weng2020gnn3dmot}}}{4}{figure.2}\protected@file@percent }
+\newlabel{fig:tracking_feature_ext}{{2}{4}{source \cite {weng2020gnn3dmot}}{figure.2}{}}
+\@writefile{toc}{\contentsline {paragraph}{Node feature Aggregation.}{4}{section*.11}\protected@file@percent }
+\newlabel{eq:two}{{2}{4}{Node feature Aggregation}{equation.3.2}{}}
+\newlabel{eq:three}{{3}{4}{Node feature Aggregation}{equation.3.3}{}}
+\newlabel{eq:four}{{4}{4}{Node feature Aggregation}{equation.3.4}{}}
+\newlabel{eq:five}{{5}{4}{Node feature Aggregation}{equation.3.5}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.3}Losses}{4}{subsubsection.3.2.3}\protected@file@percent }
+\citation{yan2018second}
+\citation{cite PV-RCNN}
+\citation{yan2018second}
+\citation{yin2020center}
+\citation{graham20183d}
+\@writefile{toc}{\contentsline {paragraph}{Bath Triplet Loss.}{5}{section*.12}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Affinity Loss.}{5}{section*.13}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}\hskip -1em.\nobreakspace  {}Experiments}{5}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}\hskip -1em.\nobreakspace  {}Waymo Dataset.}{5}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}\hskip -1em.\nobreakspace  {}Data Augmentation}{5}{subsection.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}\hskip -1em.\nobreakspace  {}Implementation Details}{5}{subsection.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Detector.}{5}{section*.14}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Tracker.}{5}{section*.15}\protected@file@percent }
+\citation{kipf2016semi}
+\citation{hamilton2017inductive}
+\citation{velivckovic2017graph}
+\citation{thekumparampil2018attention}
+\citation{wang2019dynamic}
+\bibstyle{ieee_fullname}
+\bibdata{egbib}
+\bibcite{baser2019fantrack}{1}
 \bibcite{berg2017graph}{2}
 \bibcite{bewley2016simple}{3}
 \bibcite{bochinski2017high}{4}
 \bibcite{chen2019graph}{5}
 \bibcite{engelcke2017vote3deep}{6}
 \bibcite{frossard2018end}{7}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Comparison with some state-of-the-art. the table shows mAP and mAP for each class}}{6}{table.1}\protected@file@percent }
+\newlabel{tab:waymo_det_sota}{{1}{6}{Comparison with some state-of-the-art. the table shows mAP and mAP for each class}{table.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Ablation studies for Detection}}{6}{table.2}\protected@file@percent }
+\newlabel{tab:detection_ablation}{{2}{6}{Ablation studies for Detection}{table.2}{}}
+\@writefile{toc}{\contentsline {paragraph}{Tracking Baseline.}{6}{section*.16}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}\hskip -1em.\nobreakspace  {}Main Results}{6}{subsection.4.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}\hskip -1em.\nobreakspace  {}Ablation Study}{6}{subsection.4.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Augmentations.}{6}{section*.17}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{anchor vs point based approaches}{6}{table.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Feature Extractor}{6}{section*.19}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Effect of feature extractors: A (appearance), M (motion)}}{6}{table.3}\protected@file@percent }
+\newlabel{tab:feat_extractor}{{3}{6}{Effect of feature extractors: A (appearance), M (motion)}{table.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Effect of different Node aggregators}}{6}{table.4}\protected@file@percent }
+\newlabel{tab:node_aggregator}{{4}{6}{Effect of different Node aggregators}{table.4}{}}
+\@writefile{toc}{\contentsline {paragraph}{Number of layers}{6}{section*.20}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Node Aggregation.}{6}{section*.21}\protected@file@percent }
 \bibcite{gao2019graph}{8}
 \bibcite{ge2020afdet}{9}
 \bibcite{geiger2012we}{10}
@@ -111,11 +176,6 @@
 \bibcite{velivckovic2017graph}{24}
 \bibcite{wang2015voting}{25}
 \bibcite{wang2020pillar}{26}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}\hskip -1em.\nobreakspace  {}Detection}{3}{subsection.4.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}\hskip -1em.\nobreakspace  {}Tracking}{3}{subsection.4.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5}\hskip -1em.\nobreakspace  {}Experiments}{3}{section.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}\hskip -1em.\nobreakspace  {}Main Results}{3}{subsection.5.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}\hskip -1em.\nobreakspace  {}Ablation Studies}{3}{subsection.5.2}\protected@file@percent }
 \bibcite{wang2019dynamic}{27}
 \bibcite{weng2019baseline}{28}
 \bibcite{weng2020gnn3dmot}{29}
@@ -134,11 +194,6 @@
 \citation{cite waymo}
 \citation{votenet}
 \citation{pointnet++}
-\@writefile{toc}{\contentsline {section}{Appendices}{4}{section*.7}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {A}\hskip -1em.\nobreakspace  {}Votenet for Lidar Outdoor Scenes}{4}{subsection.Alph0.1}\protected@file@percent }
-\newlabel{apendix:votenet}{{A}{4}{\hskip -1em.~Votenet for Lidar Outdoor Scenes}{subsection.Alph0.1}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {A.1}Data preparation and Training}{4}{subsubsection.Alph0.1.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{}{4}{section*.8}\protected@file@percent }
 \citation{RCNN paper}
 \citation{votenet paper}
 \citation{RCNN paper}
@@ -155,14 +210,19 @@
 \citation{point rcnn}
 \citation{point RCNN}
 \citation{KITTI}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Top view of final 3D space. Blue Points are the final proposal points from VoteNet. Green and Magenta boxes are Ground truth bounding boxes. During training, the final proposal are all lie outside the ground truth bounding boxes. Hence, the voting module cannot learn the correct modules.}}{5}{figure.1}\protected@file@percent }
-\newlabel{fig:proposal_points}{{1}{5}{Top view of final 3D space. Blue Points are the final proposal points from VoteNet. Green and Magenta boxes are Ground truth bounding boxes. During training, the final proposal are all lie outside the ground truth bounding boxes. Hence, the voting module cannot learn the correct modules}{figure.1}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {A.2}Results on 360$^{\circ }$ Point cloud}{5}{subsubsection.Alph0.1.2}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Example of caption. It is set in Roman so that mathematics (always set in Roman: $B \qopname  \relax o{sin}A = A \qopname  \relax o{sin}B$) may be included without an ugly clash.}}{5}{figure.2}\protected@file@percent }
-\newlabel{fig:votnet_front_camera_results}{{2}{5}{Example of caption. It is set in Roman so that mathematics (always set in Roman: $B \sin A = A \sin B$) may be included without an ugly clash}{figure.2}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {A.3}Results on Front Camera Frustum Point Cloud}{5}{subsubsection.Alph0.1.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {B}\hskip -1em.\nobreakspace  {}Appendix Two Test}{5}{subsection.Alph0.2}\protected@file@percent }
-\newlabel{tab:votenet_oringinal}{{A.1}{6}{}{section*.8}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Original Architecture of VPN in \cite  {votenet paper}}}{6}{table.1}\protected@file@percent }
-\newlabel{tab:votenet_msg}{{A.1}{6}{}{table.1}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Enhanced architecture of VPN with two MSG radii of receptive fields $r_{1,2}$ (meters), and MLP parameters for each MSG group implemented \cite  {RCNN paper}}}{6}{table.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{Appendices}{8}{section*.23}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {A}\hskip -1em.\nobreakspace  {}Votenet for Lidar Outdoor Scenes}{8}{subsection.Alph0.1}\protected@file@percent }
+\newlabel{appendix:votenet}{{A}{8}{\hskip -1em.~Votenet for Lidar Outdoor Scenes}{subsection.Alph0.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {A.1}Data preparation and Training}{8}{subsubsection.Alph0.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{}{8}{section*.24}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {A.2}Results on 360$^{\circ }$ Point cloud}{8}{subsubsection.Alph0.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {A.3}Results on Front Camera Frustum Point Cloud}{8}{subsubsection.Alph0.1.3}\protected@file@percent }
+\newlabel{tab:votenet_oringinal}{{A.1}{9}{}{section*.24}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Original Architecture of VPN in \cite  {votenet paper}}}{9}{table.5}\protected@file@percent }
+\newlabel{tab:votenet_msg}{{A.1}{9}{}{table.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Enhanced architecture of VPN with two MSG radii of receptive fields $r_{1,2}$ (meters), and MLP parameters for each MSG group implemented \cite  {RCNN paper}}}{9}{table.6}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Top view of final 3D space. Blue Points are the final proposal points from VoteNet. Green and Magenta boxes are Ground truth bounding boxes. During training, the final proposal are all lie outside the ground truth bounding boxes. Hence, the voting module cannot learn the correct modules. (Best viewed on screen)}}{9}{figure.3}\protected@file@percent }
+\newlabel{fig:proposal_points}{{3}{9}{Top view of final 3D space. Blue Points are the final proposal points from VoteNet. Green and Magenta boxes are Ground truth bounding boxes. During training, the final proposal are all lie outside the ground truth bounding boxes. Hence, the voting module cannot learn the correct modules. (Best viewed on screen)}{figure.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {B}\hskip -1em.\nobreakspace  {}Appendix Two Test}{9}{subsection.Alph0.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces mAP on Waymo Validation set for Original VoteNet architecture and tuned VoteNet architecture}}{10}{figure.4}\protected@file@percent }
+\newlabel{fig:votnet_front_camera_results}{{4}{10}{mAP on Waymo Validation set for Original VoteNet architecture and tuned VoteNet architecture}{figure.4}{}}
