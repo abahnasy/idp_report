@@ -1,0 +1,65 @@
+This is BibTeX, Version 0.99d (TeX Live 2020)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: egpaper_final.aux
+White space in argument---line 121 of file egpaper_final.aux
+ : \citation{cite
+ :                PV-RCNN}
+I'm skipping whatever remains of this command
+The style file: ieee_fullname.bst
+Database file #1: egbib.bib
+Repeated entry---line 87 of file egbib.bib
+ : @article{yan2018second
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 296 of file egbib.bib
+ : @inproceedings{yang20203dssd
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 367 of file egbib.bib
+ : @inproceedings{shi2019pointrcnn
+ :                                ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "wang2019dynamic"
+Warning--can't use both volume and number fields in wang2015voting
+You've used 49 entries,
+            2120 wiz_defined-function locations,
+            735 strings with 13145 characters,
+and the built_in function-call counts, 23177 in all, are:
+= -- 2302
+> -- 1195
+< -- 34
++ -- 472
+- -- 420
+* -- 1552
+:= -- 3518
+add.period$ -- 159
+call.type$ -- 49
+change.case$ -- 355
+chr.to.int$ -- 0
+cite$ -- 50
+duplicate$ -- 954
+empty$ -- 1694
+format.name$ -- 420
+if$ -- 5084
+int.to.chr$ -- 0
+int.to.str$ -- 49
+missing$ -- 49
+newline$ -- 248
+num.names$ -- 98
+pop$ -- 448
+preamble$ -- 1
+purify$ -- 306
+quote$ -- 0
+skip$ -- 806
+stack$ -- 0
+substring$ -- 1480
+swap$ -- 415
+text.length$ -- 34
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 196
+warning$ -- 1
+while$ -- 197
+width$ -- 51
+write$ -- 540
+(There were 4 error messages)

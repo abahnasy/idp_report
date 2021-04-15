@@ -118,11 +118,23 @@ Federico Monti, Michael~M Bronstein, and Xavier Bresson.
   networks.
 \newblock {\em arXiv preprint arXiv:1704.06803}, 2017.
 
+\bibitem{ngiam2019starnet}
+Jiquan Ngiam, Benjamin Caine, Wei Han, Brandon Yang, Yuning Chai, Pei Sun, Yin
+  Zhou, Xi Yi, Ouais Alsharif, Patrick Nguyen, et~al.
+\newblock Starnet: Targeted computation for object detection in point clouds.
+\newblock {\em arXiv preprint arXiv:1908.11069}, 2019.
+
 \bibitem{pirsiavash2011globally}
 Hamed Pirsiavash, Deva Ramanan, and Charless~C Fowlkes.
 \newblock Globally-optimal greedy algorithms for tracking a variable number of
   objects.
 \newblock In {\em CVPR 2011}, pages 1201--1208. IEEE, 2011.
+
+\bibitem{qi2019deep}
+Charles~R Qi, Or Litany, Kaiming He, and Leonidas~J Guibas.
+\newblock Deep hough voting for 3d object detection in point clouds.
+\newblock In {\em Proceedings of the IEEE International Conference on Computer
+  Vision}, 2019.
 
 \bibitem{qi2018frustum}
 Charles~R Qi, Wei Liu, Chenxia Wu, Hao Su, and Leonidas~J Guibas.
@@ -137,12 +149,50 @@ Charles~R Qi, Hao Su, Kaichun Mo, and Leonidas~J Guibas.
 \newblock In {\em Proceedings of the IEEE conference on computer vision and
   pattern recognition}, pages 652--660, 2017.
 
+\bibitem{qi2017pointnet++}
+Charles~R Qi, Li Yi, Hao Su, and Leonidas~J Guibas.
+\newblock Pointnet++: Deep hierarchical feature learning on point sets in a
+  metric space.
+\newblock {\em arXiv preprint arXiv:1706.02413}, 2017.
+
 \bibitem{shi2019skeleton}
 Lei Shi, Yifan Zhang, Jian Cheng, and Hanqing Lu.
 \newblock Skeleton-based action recognition with directed graph neural
   networks.
 \newblock In {\em Proceedings of the IEEE/CVF Conference on Computer Vision and
   Pattern Recognition}, pages 7912--7921, 2019.
+
+\bibitem{shi2020pv}
+Shaoshuai Shi, Chaoxu Guo, Li Jiang, Zhe Wang, Jianping Shi, Xiaogang Wang, and
+  Hongsheng Li.
+\newblock Pv-rcnn: Point-voxel feature set abstraction for 3d object detection.
+\newblock In {\em Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition}, pages 10529--10538, 2020.
+
+\bibitem{shi2019pointrcnn}
+Shaoshuai Shi, Xiaogang Wang, and Hongsheng Li.
+\newblock Pointrcnn: 3d object proposal generation and detection from point
+  cloud.
+\newblock In {\em Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition}, pages 770--779, 2019.
+
+\bibitem{smith2017cyclical}
+Leslie~N Smith.
+\newblock Cyclical learning rates for training neural networks.
+\newblock In {\em 2017 IEEE winter conference on applications of computer
+  vision (WACV)}, pages 464--472. IEEE, 2017.
+
+\bibitem{sun2020scalability}
+Pei Sun, Henrik Kretzschmar, Xerxes Dotiwalla, Aurelien Chouard, Vijaysai
+  Patnaik, Paul Tsui, James Guo, Yin Zhou, Yuning Chai, Benjamin Caine, et~al.
+\newblock Scalability in perception for autonomous driving: Waymo open dataset.
+\newblock In {\em Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition}, pages 2446--2454, 2020.
+
+\bibitem{thekumparampil2018attention}
+Kiran~K Thekumparampil, Chong Wang, Sewoong Oh, and Li-Jia Li.
+\newblock Attention-based graph neural network for semi-supervised learning.
+\newblock {\em arXiv preprint arXiv:1803.03735}, 2018.
 
 \bibitem{velivckovic2017graph}
 Petar Veli{\v{c}}kovi{\'c}, Guillem Cucurull, Arantxa Casanova, Adriana Romero,
@@ -156,17 +206,18 @@ Dominic~Zeng Wang and Ingmar Posner.
 \newblock In {\em Robotics: Science and Systems}, volume~1, pages 10--15607.
   Rome, Italy, 2015.
 
+\bibitem{wang20201st}
+Yu Wang, Sijia Chen, Li Huang, Runzhou Ge, Yihan Hu, Zhuangzhuang Ding, and Jie
+  Liao.
+\newblock 1st place solutions for waymo open dataset challenges--2d and 3d
+  tracking.
+\newblock {\em arXiv preprint arXiv:2006.15506}, 2020.
+
 \bibitem{wang2020pillar}
 Yue Wang, Alireza Fathi, Abhijit Kundu, David Ross, Caroline Pantofaru, Tom
   Funkhouser, and Justin Solomon.
 \newblock Pillar-based object detection for autonomous driving.
 \newblock {\em arXiv preprint arXiv:2007.10323}, 2020.
-
-\bibitem{wang2019dynamic}
-Yue Wang, Yongbin Sun, Ziwei Liu, Sanjay~E Sarma, Michael~M Bronstein, and
-  Justin~M Solomon.
-\newblock Dynamic graph cnn for learning on point clouds.
-\newblock {\em Acm Transactions On Graphics (tog)}, 38(5):1--12, 2019.
 
 \bibitem{weng2019baseline}
 Xinshuo Weng and Kris Kitani.

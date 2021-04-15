@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.5.14)  12 APR 2021 00:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.5.14)  15 APR 2021 04:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -372,7 +372,7 @@ LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 4
 (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Underfull \hbox (badness 1997) in paragraph at lines 58--59
+Underfull \hbox (badness 1997) in paragraph at lines 57--58
 \OT1/ptm/m/n/10 is a cru-cial com-po-nent for au-tonomous driv-ing [[]].
  []
 
@@ -381,94 +381,73 @@ Underfull \hbox (badness 1997) in paragraph at lines 58--59
 
 ]
 
-LaTeX Warning: Citation `qi2019deep' on page 2 undefined on input line 77.
+LaTeX Warning: Citation `wang2019dynamic' on page 2 undefined on input line 68.
 
-
-LaTeX Warning: Citation `sota on waymo' on page 2 undefined on input line 81.
-
-
-LaTeX Warning: Citation `dataset' on page 2 undefined on input line 81.
-
-
-LaTeX Warning: Citation `second' on page 2 undefined on input line 81.
-
-
-LaTeX Warning: Citation `pixor' on page 2 undefined on input line 81.
-
-
-LaTeX Warning: Citation `PointPillars' on page 2 undefined on input line 81.
 
 [2]
-<media/detection_net.png, id=128, 951.555pt x 459.7175pt>
+<media/detection_net.png, id=132, 951.555pt x 459.7175pt>
 File: media/detection_net.png Graphic file (type png)
 <use media/detection_net.png>
-Package pdftex.def Info: media/detection_net.png  used on input line 84.
+Package pdftex.def Info: media/detection_net.png  used on input line 83.
 (pdftex.def)             Requested size: 496.85625pt x 240.04355pt.
-
-
-LaTeX Warning: Citation `shi2019pointrcnn' on page 3 undefined on input line 98
-.
-
-<media/tracking_net.png, id=134, 385.44pt x 270.00874pt>
+<media/tracking_net.png, id=139, 385.44pt x 270.00874pt>
 File: media/tracking_net.png Graphic file (type png)
 <use media/tracking_net.png>
-Package pdftex.def Info: media/tracking_net.png  used on input line 101.
+Package pdftex.def Info: media/tracking_net.png  used on input line 100.
 (pdftex.def)             Requested size: 237.13594pt x 166.11824pt.
-
-LaTeX Warning: Citation `pointnet' on page 3 undefined on input line 108.
-
+ [3]
 
 LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 1
-22.
+21.
 
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
-22.
+21.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
 
 LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 1
-22.
+21.
 
 
 LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 1
-22.
+21.
 
 
 LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 1
-22.
+21.
 
 
 LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 1
-22.
+21.
 
 
 LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 1
-22.
+21.
 
 
 LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 1
-22.
+21.
 
 
 LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 1
-22.
+21.
 
 
 LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 1
-22.
+21.
 
 
 LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 1
-22.
+21.
 
 
 LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 1
-22.
+21.
 
 
 LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 1
-22.
+21.
 
 Missing character: There is no � in font cmr10!
 Missing character: There is no � in font cmr10!
@@ -476,34 +455,35 @@ Missing character: There is no � in font cmr10!
 Missing character: There is no � in font cmr10!
 Missing character: There is no � in font cmr10!
 Missing character: There is no � in font cmr10!
-[3]
-Underfull \hbox (badness 1242) in paragraph at lines 125--126
-[]\OT1/ptm/m/n/10 The first type is ap-ply-ing gen-eral mes-sage pass-ing
- []
 
+LaTeX Warning: Citation `wang2019dynamic' on page 4 undefined on input line 124
+.
 
-Underfull \vbox (badness 1014) has occurred while \output is active []
+[4 <./media/detection_net.png> <./media/tracking_net.png>]
 
- [4 <./media/detection_net.png> <./media/tracking_net.png>]
-
-LaTeX Warning: Citation `cite PV-RCNN' on page 5 undefined on input line 191.
+LaTeX Warning: Citation `cite PV-RCNN' on page 5 undefined on input line 185.
 
 [5]
-Underfull \hbox (badness 1558) in paragraph at lines 196--198
+Underfull \hbox (badness 1558) in paragraph at lines 192--193
  []\OT1/ptm/b/n/10 Tracking Base-line.[] \OT1/ptm/m/n/10 A velocity-based clos-
 est dis-tance
  []
 
+<media/predictions.png, id=216, 1924.18875pt x 1072.005pt>
+File: media/predictions.png Graphic file (type png)
+<use media/predictions.png>
+Package pdftex.def Info: media/predictions.png  used on input line 198.
+(pdftex.def)             Requested size: 496.85625pt x 276.8009pt.
+<media/gnn_layers.png, id=225, 395.4775pt x 265.99374pt>
+File: media/gnn_layers.png Graphic file (type png)
+<use media/gnn_layers.png>
+Package pdftex.def Info: media/gnn_layers.png  used on input line 268.
+(pdftex.def)             Requested size: 237.13594pt x 159.496pt.
 
-Overfull \hbox (14.25182pt too wide) in paragraph at lines 204--216
- [] 
- []
+LaTeX Warning: Citation `wang2019dynamic' on page 6 undefined on input line 288
+.
 
-
-LaTeX Warning: Citation `thekumparampil2018attention' on page 6 undefined on in
-put line 282.
-
-(./egpaper_final.bbl
+(./egpaper_final.bbl [6]
 Underfull \hbox (badness 1354) in paragraph at lines 28--33
 []\OT1/ptm/m/n/9 Yunpeng Chen, Mar-cus Rohrbach, Zhicheng Yan, Yan
  []
@@ -513,126 +493,73 @@ Underfull \hbox (badness 1057) in paragraph at lines 35--41
 []\OT1/ptm/m/n/9 Martin En-gel-cke, Dushyant Rao, Do-minic Zeng Wang,
  []
 
-[6]
+
 Underfull \hbox (badness 1424) in paragraph at lines 74--79
 []\OT1/ptm/m/n/9 Benjamin Gra-ham, Mar-tin En-gel-cke, and Lau-rens Van
  []
 
+[7 <./media/predictions.png> <./media/gnn_layers.png>]
+Underfull \hbox (badness 2035) in paragraph at lines 122--126
+\OT1/ptm/m/n/9 Yun-ing Chai, Pei Sun, Yin Zhou, Xi Yi, Ouais Al-
+ []
 
-Underfull \hbox (badness 1845) in paragraph at lines 141--146
+
+Underfull \hbox (badness 1845) in paragraph at lines 159--164
 []\OT1/ptm/m/n/9 Lei Shi, Yi-fan Zhang, Jian Cheng, and Han-qing Lu.
  []
 
 
-Underfull \hbox (badness 1365) in paragraph at lines 148--152
+Underfull \hbox (badness 1365) in paragraph at lines 198--202
 []\OT1/ptm/m/n/9 Petar Veli[]ckovi[]c, Guillem Cu-cu-rull, Aran-txa Casanova,
  []
 
 
-Underfull \hbox (badness 1043) in paragraph at lines 160--164
+Underfull \hbox (badness 1043) in paragraph at lines 217--221
 \OT1/ptm/m/n/9 o-line Panto-faru, Tom Funkhouser, and Justin Solomon.
  []
 
-[7])
-
-LaTeX Warning: Citation `cite waymo' on page 8 undefined on input line 308.
-
-
-LaTeX Warning: Citation `votenet' on page 8 undefined on input line 308.
-
-
-LaTeX Warning: Citation `pointnet++' on page 8 undefined on input line 313.
-
-
-LaTeX Warning: Citation `RCNN paper' on page 8 undefined on input line 315.
-
-
-LaTeX Warning: Citation `votenet paper' on page 8 undefined on input line 334.
-
-
-LaTeX Warning: Citation `RCNN paper' on page 8 undefined on input line 355.
-
-
-LaTeX Warning: Citation `RCNN paper' on page 8 undefined on input line 355.
-
-<media/votenet_proposal_points.png, id=232, 1141.26375pt x 1005.7575pt>
+[8]) [9]
+<media/votenet_proposal_points.png, id=286, 1141.26375pt x 1005.7575pt>
 File: media/votenet_proposal_points.png Graphic file (type png)
 <use media/votenet_proposal_points.png>
 Package pdftex.def Info: media/votenet_proposal_points.png  used on input line 
-362.
+368.
 (pdftex.def)             Requested size: 237.13594pt x 208.9747pt.
-
-LaTeX Warning: Citation `pointnet' on page 8 undefined on input line 368.
-
-
-LaTeX Warning: Citation `point++' on page 8 undefined on input line 368.
-
-
-LaTeX Warning: Citation `votennet' on page 8 undefined on input line 368.
-
-
-LaTeX Warning: Citation `votenet frustutm' on page 8 undefined on input line 36
-8.
-
-
-LaTeX Warning: Citation `point rcnn' on page 8 undefined on input line 368.
-
-
-LaTeX Warning: Citation `KITTI' on page 8 undefined on input line 368.
-
-
-LaTeX Warning: Citation `nuscenes' on page 8 undefined on input line 368.
-
-
-LaTeX Warning: Citation `Waymo' on page 8 undefined on input line 368.
-
-
-LaTeX Warning: Citation `a2d2' on page 8 undefined on input line 368.
-
-
-LaTeX Warning: Citation `point rcnn' on page 8 undefined on input line 368.
-
-
-LaTeX Warning: Citation `point RCNN' on page 8 undefined on input line 368.
-
-
-LaTeX Warning: Citation `KITTI' on page 8 undefined on input line 368.
-
-[8]
-Underfull \vbox (badness 2951) has occurred while \output is active []
-
-
-
-LaTeX Warning: Reference `' on page 9 undefined on input line 370.
-
-<media/votenet_mAP.png, id=246, 397.485pt x 280.04625pt>
+<media/votenet_mAP.png, id=295, 397.485pt x 280.04625pt>
 File: media/votenet_mAP.png Graphic file (type png)
 <use media/votenet_mAP.png>
-Package pdftex.def Info: media/votenet_mAP.png  used on input line 373.
+Package pdftex.def Info: media/votenet_mAP.png  used on input line 379.
 (pdftex.def)             Requested size: 237.13594pt x 167.07611pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 384.
-[9 <./media/votenet_proposal_points.png>] [10
+ [10 <./media/votenet_proposal_points.png>]
+Overfull \hbox (2.49228pt too wide) in paragraph at lines 390--398
+ [] 
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 403.
+[11
 
  <./media/votenet_mAP.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 384.
-
-(./egpaper_final.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 384.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 384.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 403.
+ (./egpaper_final.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 403.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 403.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 384.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 403.
  ) 
 Here is how much of TeX's memory you used:
- 6851 strings out of 480608
- 101469 string characters out of 5903630
- 376079 words of memory out of 5000000
- 22469 multiletter control sequences out of 15000+600000
- 559725 words of font info for 84 fonts, out of 8000000 for 9000
+ 6890 strings out of 480608
+ 102171 string characters out of 5903630
+ 375608 words of memory out of 5000000
+ 22491 multiletter control sequences out of 15000+600000
+ 562347 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,18n,31p,1987b,468s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,18n,31p,1984b,468s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
@@ -650,10 +577,10 @@ t/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf
 nts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/
 urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/
 utmri8a.pfb>
-Output written on egpaper_final.pdf (10 pages, 541954 bytes).
+Output written on egpaper_final.pdf (11 pages, 802607 bytes).
 PDF statistics:
- 342 PDF objects out of 1000 (max. 8388607)
- 302 compressed objects within 4 object streams
- 115 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 401 PDF objects out of 1000 (max. 8388607)
+ 355 compressed objects within 4 object streams
+ 128 named destinations out of 1000 (max. 500000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
