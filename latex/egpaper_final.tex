@@ -150,7 +150,7 @@ L = \sum^{K-1}_{K=0}(L^{k}_{tri} + L^{k}_{aff})
 
 \begin{multline}
 L_{tri} =  \max(\left\|n^{t}_{i} - n^{t+1}_{j}\right\| - \min_{\substack{\text{$d_{s}\in D$} \\ \text{$id_{i} \neq id_{s}$}}}
-{\left\|n^{t}_{i} - n^{t+1}_{j}\right\|} -\\ \min_{\substack{\text{$o_{r} \in O$} \\ \text{$id_{r} \neq id_{j}$}}}{\left\| n^{t}_{i} - n^{t+1}_{j}\right\|}+ \alpha, 0)
+{\left\|n^{t}_{i} - n^{t+1}_{s}\right\|} -\\ \min_{\substack{\text{$o_{r} \in O$} \\ \text{$id_{r} \neq id_{j}$}}}{\left\| n^{t}_{r} - n^{t+1}_{j}\right\|}+ \alpha, 0)
 \end{multline}
 where $\alpha$ is the margin of the triplet loss. $n^{t+1}_{s}$ is a node in frame $t+1$ that has a different ID from node $n^{t+1}_{j}$ and $n^{t}_{i}$. Similarly, $n^{t}_{i}$ and $n^{t+1}_{j}$. In the case that $n^{t}_{i}$ does not have a matched node in frame $t+1$ with the same ID,  the first is deleted for the positive pair and only the remaining two negative terms in the loss are considered.
 
